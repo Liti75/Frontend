@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biosphere Reserves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(76, 218, 76);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            animation: slidein 3s ease-out;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+
+        table {
+            width: 90%;
+            max-width: 800px;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            padding: 12px 16px;
+            border: 2px solid #000;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #222;
+            color: white;
+        }
+
+        td a {
+            color: rgb(138, 20, 138);
+            text-decoration: none;
+        }
+
+        td a:hover {
+            color: brown;
+        }
+
+        /* Animation */
+        @keyframes slidein {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            th, td {
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Biosphere Reserves</h1>
+    </header>
+
+    <main>
+        <table>
+            <tr>
+                <th>State / UT</th>
+                <th>No. of Biosphere Reserves</th>
+            </tr>
+            <tr>
+                <td><a href="#">Andhra Pradesh</a></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><a href="#">Odisha</a></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><a href="#">Maharashtra</a></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><a href="#">Jharkhand</a></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><a href="#">West Bengal</a></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><a href="#">Karnataka</a></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><a href="#">Madhya Pradesh</a></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><a href="#">Uttarakhand</a></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><a href="#">Tamil Nadu</a></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><a href="#">Andaman & Nicobar</a></td>
+                <td>1</td>
+            </tr>
+        </table>
+    </main>
+
+</body>
+</html>

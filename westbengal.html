@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>West Bengal National Parks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url('https://imgs.search.brave.com/in5_p9_-q1rOLtGySavfbthWPbiN5jGcnu3V4MjMy4U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2hlYXBpc20uY29t/L2ltYWdlcy9EZW5h/bGlfTmF0aW9uYWxf/UGFya18xZ2NUa3ZO/Lm1heC04MjV4NTUw/LmpwZw');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            font-size: 1.8rem;
+            font-style: italic;
+            color: #222;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            a {
+                font-size: 1.2rem;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://en.wikipedia.org/wiki/Gorumara_National_Park">Gorumara National Park</a>
+        <a href="https://en.wikipedia.org/wiki/Jaldapara_National_Park">Jaldapara National Park</a>
+        <a href="https://en.wikipedia.org/wiki/Neora_Valley_National_Park">Neora Valley National Park</a>
+        <a href="https://en.wikipedia.org/wiki/Singalila_National_Park">Singalila National Park</a>
+        <a href="https://en.wikipedia.org/wiki/Sundarbans_National_Park">Sundarbans National Park</a>
+        <a href="https://en.wikipedia.org/wiki/Buxa_Tiger_Reserve">Buxa National Park and Tiger Reserve</a>
+    </div>
+</body>
+</html>

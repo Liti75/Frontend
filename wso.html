@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wildlife Sanctuaries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Background */
+        body {
+            margin: 0;
+            background-image: url('https://imgs.search.brave.com/U9ISBhd2f0bzi1ZiZcCrBmTHEeiDSkgD89vkNTee9JI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9iaWctaGVyZC13/aWxkZWJlZXN0LWlz/LWFib3V0LW1hcmEt/cml2ZXJfMjY1MTQy/LTY0MDEuanBnP3Np/emU9NjI2JmV4dD1q/cGc');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+        }
+
+        /* Dark overlay for text readability */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        /* Container */
+        .container {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+
+        /* Header */
+        .container h1 {
+            font-size: 2.5rem;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        /* Link cards */
+        .link-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid white;
+            padding: 15px 25px;
+            margin: 15px 0;
+            border-radius: 10px;
+            transition: background 0.3s, transform 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: white;
+        }
+
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .container h1 {
+                font-size: 2rem;
+            }
+
+            .link-card {
+                font-size: 1.2rem;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wildlife Sanctuaries in Odisha</h1>
+        <a class="link-card" href="https://en.wikipedia.org/wiki/Baisipalli_Wildlife_Sanctuary" target="_blank">Baisipalli Wildlife Sanctuary</a>
+        <a class="link-card" href="https://en.wikipedia.org/wiki/Bhitarkanika_Mangroves" target="_blank">Bhitarkanika Mangroves</a>
+        <a class="link-card" href="https://en.wikipedia.org/wiki/Kapilasa_Wildlife_Sanctuary" target="_blank">Kapilasa Wildlife Sanctuary</a>
+        <a class="link-card" href="https://en.wikipedia.org/wiki/Debrigarh_Wildlife_Sanctuary" target="_blank">Debrigarh Wildlife Sanctuary</a>
+        <a class="link-card" href="https://en.wikipedia.org/wiki/Hadgarh_Wildlife_Sanctuary" target="_blank">Hadgarh Wildlife Sanctuary</a>
+    </div>
+</body>
+</html>

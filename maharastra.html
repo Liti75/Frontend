@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maharashtra National Parks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://imgs.search.brave.com/in5_p9_-q1rOLtGySavfbthWPbiN5jGcnu3V4MjMy4U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2hlYXBpc20uY29t/L2ltYWdlcy9EZW5h/bGlfTmF0aW9uYWxf/UGFya18xZ2NUa3ZO/Lm1heC04MjV4NTUw/LmpwZw');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6); /* dark overlay for contrast */
+            min-height: 100vh;
+            padding: 60px 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .park-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .park-list a {
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: #f0f0f0;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .park-list a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .park-list a {
+                font-size: 1.2rem;
+                padding: 12px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Maharashtra National Parks</h1>
+        <section class="park-list">
+            <a href="https://en.wikipedia.org/wiki/Tadoba_Andhari_Tiger_Reserve" target="_blank">Tadoba National Park</a>
+            <a href="https://en.wikipedia.org/wiki/Chandoli_National_Park" target="_blank">Chandoli National Park</a>
+            <a href="https://en.wikipedia.org/wiki/Gugamal_National_Park" target="_blank">Gugamal National Park</a>
+            <a href="https://en.wikipedia.org/wiki/Sanjay_Gandhi_National_Park" target="_blank">Sanjay Gandhi National Park</a>
+            <a href="https://en.wikipedia.org/wiki/Navegaon_National_Park" target="_blank">Navegaon National Park</a>
+            <a href="https://en.wikipedia.org/wiki/Pench_National_Park" target="_blank">Pench National Park</a>
+        </section>
+    </div>
+</body>
+</html>

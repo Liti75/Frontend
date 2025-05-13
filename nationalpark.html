@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>National Parks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(180, 223, 180);
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: black;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 30px 15px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            padding: 12px 16px;
+            border: 2px solid #000;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        td a {
+            color: rgb(138, 20, 138);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        td a:hover {
+            color: brown;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            th, td {
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NATIONAL PARK</h1>
+    </header>
+
+    <main>
+        <table>
+            <tr>
+                <th>State / UT</th>
+                <th>No. of National Parks</th>
+            </tr>
+            <tr>
+                <td><a href="andhrapradesh.html">Andhra Pradesh</a></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td><a href="odisha.html">Odisha</a></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><a href="maharastra.html">Maharashtra</a></td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td><a href="jharkhand.html">Jharkhand</a></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><a href="telangana.html">Telangana</a></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td><a href="westbengal.html">West Bengal</a></td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td><a href="andaman.html">Andaman & Nicobar</a></td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td><a href="j&k.html">Jammu & Kashmir</a></td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td><a href="goa.html">Goa</a></td>
+                <td>1</td>
+            </tr>
+        </table>
+    </main>
+
+</body>
+</html>
