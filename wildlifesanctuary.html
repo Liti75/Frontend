@@ -1,137 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Wildlife Sanctuary</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-color: rgb(76, 218, 76);
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <title>Wildlife Sanctuary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #16a085;
+      --hover-color: #e74c3c;
+      --background: #f9f9f9;
+      --text-dark: #2d3436;
+      --text-light: #ffffff;
+    }
 
-        header {
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            animation: slidein 3s ease-out;
-        }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text-dark);
+    }
 
-        header h1 {
-            font-size: 3.5rem;
-            margin: 0;
-        }
+    header {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      padding: 30px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
 
-        main {
-            display: flex;
-            justify-content: center;
-            padding: 30px 20px;
-        }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
 
-        table {
-            width: 90%;
-            max-width: 800px;
-            border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
+    main {
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
 
-        th, td {
-            padding: 12px 16px;
-            border: 2px solid #000;
-            font-size: 1.2rem;
-            text-align: left;
-        }
+    table {
+      width: 100%;
+      max-width: 900px;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+    }
 
-        th {
-            background-color: #222;
-            color: white;
-        }
+    th, td {
+      padding: 16px 20px;
+      text-align: left;
+      font-size: 1.1rem;
+      border-bottom: 1px solid #ddd;
+    }
 
-        td a {
-            color: rgb(138, 20, 138);
-            text-decoration: none;
-        }
+    th {
+      background-color: var(--accent-color);
+      color: var(--text-light);
+    }
 
-        td a:hover {
-            color: brown;
-        }
+    td a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
 
-        @keyframes slidein {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
+    td a:hover {
+      color: var(--hover-color);
+    }
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
+    tr:last-child td {
+      border-bottom: none;
+    }
 
-            th, td {
-                font-size: 1rem;
-                padding: 10px;
-            }
-        }
-    </style>
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      th, td {
+        font-size: 1rem;
+        padding: 12px 14px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Wildlife Sanctuaries of India</h1>
+  </header>
 
-    <header>
-        <h1>WILDLIFE SANCTUARY</h1>
-    </header>
-
-    <main>
-        <table>
-            <tr>
-                <th>State / UT</th>
-                <th>No. of Sanctuaries</th>
-            </tr>
-            <tr>
-                <td><a href="wsap.html">Andhra Pradesh</a></td>
-                <td>13</td>
-            </tr>
-            <tr>
-                <td><a href="wso.html">Odisha</a></td>
-                <td>19</td>
-            </tr>
-            <tr>
-                <td><a href="#">Maharashtra</a></td>
-                <td>42</td>
-            </tr>
-            <tr>
-                <td><a href="#">Jharkhand</a></td>
-                <td>11</td>
-            </tr>
-            <tr>
-                <td><a href="#">Telangana</a></td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td><a href="#">West Bengal</a></td>
-                <td>15</td>
-            </tr>
-            <tr>
-                <td><a href="#">Andaman & Nicobar</a></td>
-                <td>96</td>
-            </tr>
-            <tr>
-                <td><a href="#">Jammu & Kashmir</a></td>
-                <td>15</td>
-            </tr>
-            <tr>
-                <td><a href="#">Goa</a></td>
-                <td>6</td>
-            </tr>
-        </table>
-    </main>
-
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>State / UT</th>
+          <th>No. of Sanctuaries</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="wsap.html">Andhra Pradesh</a></td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td><a href="wso.html">Odisha</a></td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td><a href="wsm.html">Maharashtra</a></td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <td><a href="wsj.html">Jharkhand</a></td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td><a href="wst.html">Telangana</a></td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td><a href="wswb.html">West Bengal</a></td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td><a href="wsa&n.html">Andaman & Nicobar</a></td>
+          <td>97</td>
+        </tr>
+        <tr>
+          <td><a href="wsj&k.html">Jammu Kashmir</a></td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td><a href="wsl.html">Ladakh</a></td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><a href="wsg.html">Goa</a></td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
 </body>
 </html>

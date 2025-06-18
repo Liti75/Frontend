@@ -1,85 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Andaman & Nicobar National Parks</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                        url('https://imgs.search.brave.com/in5_p9_-q1rOLtGySavfbthWPbiN5jGcnu3V4MjMy4U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2hlYXBpc20uY29t/L2ltYWdlcy9EZW5h/bGlfTmF0aW9uYWxf/UGFya18xZ2NUa3ZO/Lm1heC04MjV4NTUw/LmpwZw') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            padding: 40px 20px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Andaman & Nicobar National Parks</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+    }
 
-        h1 {
-            text-align: center;
-            font-size: 2.8rem;
-            font-style: italic;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 5px black;
-        }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
 
-        .park-link {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 15px 20px;
-            border-radius: 10px;
-            font-size: 1.4rem;
-            text-align: center;
-            transition: background 0.3s, transform 0.3s;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
+    .park-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
-        .park-link a {
-            text-decoration: none;
-            color: #f8f8f8;
-        }
+    .park-list a {
+      background-color: #ffffff;
+      color: #2c3e50;
+      text-decoration: none;
+      padding: 18px 25px;
+      font-size: 1.3rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: all 0.3s ease;
+    }
 
-        .park-link:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            transform: scale(1.02);
-        }
+    .park-list a:hover {
+      background-color: #2c3e50;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
 
-        .park-link a:hover {
-            color: #ffd700; /* Gold */
-        }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-            .park-link {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
+      .park-list a {
+        font-size: 1rem;
+        padding: 14px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-
-    <h1>National Parks of Andaman & Nicobar Islands</h1>
-
-    <div class="container">
-        <div class="park-link"><a href="https://en.wikipedia.org/wiki/Campbell_Bay_National_Park">Campbell Bay National Park</a></div>
-        <div class="park-link"><a href="https://en.wikipedia.org/wiki/Galathea_National_Park">Galathea National Park</a></div>
-        <div class="park-link"><a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi_Marine_National_Park">Mahatma Gandhi Marine National Park</a></div>
-        <div class="park-link"><a href="https://en.wikipedia.org/wiki/Middle_Button_Island_National_Park">Middle Button Island National Park</a></div>
-        <div class="park-link"><a href="https://en.wikipedia.org/wiki/Mount_Harriet_National_Park">Mount Harriet National Park</a></div>
-        <div class="park-link"><a href="https://en.wikipedia.org/wiki/North_Button_Island_National_Park">North Button Island National Park</a></div>
-        <div class="park-link"><a href="https://en.wikipedia.org/wiki/Rani_Jhansi_Marine_National_Park">Rani Jhansi Marine National Park</a></div>
-        <div class="park-link"><a href="https://en.wikipedia.org/wiki/Saddle_Peak_National_Park">Saddle Peak National Park</a></div>
-        <div class="park-link"><a href="https://en.wikipedia.org/wiki/South_Button_Island_National_Park">South Button Island National Park</a></div>
+  <div class="container">
+    <h1>Andaman & Nicobar National Parks</h1>
+    <div class="park-list">
+      <a href="https://en.wikipedia.org/wiki/Campbell_Bay_National_Park" target="_blank">Campbell Bay National Park</a>
+      <a href="https://en.wikipedia.org/wiki/Galathea_National_Park" target="_blank">Galathea National Park</a>
+      <a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi_Marine_National_Park" target="_blank">Mahatma Gandhi Marine National Park</a>
+      <a href="https://en.wikipedia.org/wiki/Middle_Button_Island_National_Park" target="_blank">Middle Button Island National Park</a>
+      <a href="https://en.wikipedia.org/wiki/Mount_Harriet_National_Park" target="_blank">Mount Harriet National Park</a>
+      <a href="https://en.wikipedia.org/wiki/North_Button_Island_National_Park" target="_blank">North Button Island National Park</a>
+      <a href="https://en.wikipedia.org/wiki/Rani_Jhansi_Marine_National_Park" target="_blank">Rani Jhansi Marine National Park</a>
+      <a href="https://en.wikipedia.org/wiki/Saddle_Peak_National_Park" target="_blank">Saddle Peak National Park</a>
+      <a href="https://en.wikipedia.org/wiki/South_Button_Island_National_Park" target="_blank">South Button Island National Park</a>
     </div>
-
+  </div>
 </body>
 </html>

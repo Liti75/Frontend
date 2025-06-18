@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>National Parks in Telangana</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Background Styling */
-        body {
-            margin: 0;
-            padding: 0;
-            background: url("https://imgs.search.brave.com/in5_p9_-q1rOLtGySavfbthWPbiN5jGcnu3V4MjMy4U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2hlYXBpc20uY29t/L2ltYWdlcy9EZW5h/bGlfTmF0aW9uYWxf/UGFya18xZ2NUa3ZO/Lm1heC04MjV4NTUw/LmpwZw") no-repeat center center fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            color: #fff;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telangana National Parks</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+    }
 
-        /* Container for Centered Layout */
-        .container {
-            background-color: rgba(0, 0, 0, 0.6); /* Overlay for readability */
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 20px;
-            text-align: center;
-        }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
 
-        h1 {
-            font-size: 2.5rem;
-            font-style: italic;
-            margin: 20px 0;
-        }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
 
-        a {
-            color: #ffd700;
-            text-decoration: none;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
+    .park-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
-        a:hover {
-            color: #ffffff;
-            transform: scale(1.05);
-        }
+    .park-list a {
+      background-color: #ffffff;
+      color: #2c3e50;
+      text-decoration: none;
+      padding: 18px 25px;
+      font-size: 1.3rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: all 0.3s ease;
+    }
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.6rem;
-            }
-        }
-    </style>
+    .park-list a:hover {
+      background-color: #2c3e50;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .park-list a {
+        font-size: 1rem;
+        padding: 14px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1><a href="https://en.wikipedia.org/wiki/Kasu_Brahmananda_Reddy_National_Park" target="_blank">Kasu Brahmananda Reddy National Park</a></h1>
-        <h1><a href="https://en.wikipedia.org/wiki/Mahavir_Harina_Vanasthali_National_Park" target="_blank">Mahavir Harina Vanasthali National Park</a></h1>
-        <h1><a href="https://en.wikipedia.org/wiki/Mrugavani_National_Park" target="_blank">Mrugavani National Park</a></h1>
+  <div class="container">
+    <h1>Telangana National Parks</h1>
+    <div class="park-list">
+      <a href="https://en.wikipedia.org/wiki/Kasu_Brahmananda_Reddy_National_Park" target="_blank">Kasu Brahmananda Reddy National Park</a>
+      <a href="https://en.wikipedia.org/wiki/Mahavir_Harina_Vanasthali_National_Park" target="_blank">Mahavir Harina Vanasthali National Park</a>
+      <a href="https://en.wikipedia.org/wiki/Mrugavani_National_Park" target="_blank">Mrugavani National Park</a>
     </div>
+  </div>
 </body>
 </html>

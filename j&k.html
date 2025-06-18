@@ -1,94 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>National Parks of Jammu & Kashmir</title>
-    <style>
-        body {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url('https://imgs.search.brave.com/in5_p9_-q1rOLtGySavfbthWPbiN5jGcnu3V4MjMy4U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2hlYXBpc20uY29t/L2ltYWdlcy9EZW5h/bGlfTmF0aW9uYWxf/UGFya18xZ2NUa3ZO/Lm1heC04MjV4NTUw/LmpwZw');
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jammu & Kashmir National Parks</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fb;
+      color: #2c3e50;
+    }
 
-        h1 {
-            font-size: 3rem;
-            font-style: italic;
-            margin: 20px 0;
-            text-align: center;
-            transition: color 0.3s ease;
-        }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
 
-        h1 a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
 
-        h1 a:hover {
-            color: #f1c40f; /* Bright yellow on hover */
-        }
+    .park-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
-        .container {
-            max-width: 800px;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.6); /* Slightly dark background for readability */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-        }
+    .park-list a {
+      background-color: #ffffff;
+      color: #2c3e50;
+      text-decoration: none;
+      padding: 18px 25px;
+      font-size: 1.3rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+    }
 
-        .container p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            color: #ddd;
-        }
+    .park-list a:hover {
+      background-color: #2c3e50;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
 
-        .container ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
 
-        .container li {
-            font-size: 1.1rem;
-            margin: 10px 0;
-            text-align: left;
-            color: #f1c40f;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 15px;
-            }
-        }
-    </style>
+      .park-list a {
+        font-size: 1rem;
+        padding: 14px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>National Parks of Jammu & Kashmir</h1>
-        <p>Jammu & Kashmir, a beautiful region in India, is home to a variety of wildlife and rich natural beauty. The region features several well-known national parks that are perfect for nature lovers and conservationists. Here are a few famous national parks:</p>
-
-        <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Hemis_National_Park" target="_blank">Hemis National Park</a> – A high-altitude park famous for its rich biodiversity, including the elusive Snow Leopard.</li>
-            <li><a href="https://en.wikipedia.org/wiki/Dachigam_National_Park" target="_blank">Dachigam National Park</a> – Home to the endangered Hangul deer and rich vegetation, located near Srinagar.</li>
-            <li><a href="https://en.wikipedia.org/wiki/Kishtwar_National_Park" target="_blank">Kishtwar National Park</a> – A beautiful park situated in the Kishtwar district, known for its scenic landscapes and wildlife.</li>
-            <li><a href="https://en.wikipedia.org/wiki/Kazinag_National_Park" target="_blank">Kazinag National Park</a> – A park located on the borders of Jammu & Kashmir and famous for its wildlife diversity.</li>
-        </ul>
-
-        <p>These national parks are essential for preserving the natural heritage and biodiversity of Jammu & Kashmir. Visit them to explore the beauty of nature and contribute to conservation efforts.</p>
+  <div class="container">
+    <h1>Jammu & Kashmir National Parks</h1>
+    <div class="park-list">
+      <a href="https://en.wikipedia.org/wiki/Dachigam_National_Park" target="_blank">Dachigam National Park</a> 
+      <a href="https://en.wikipedia.org/wiki/Kishtwar_National_Park" target="_blank">Kishtwar National Park</a>
+      <a href="https://en.wikipedia.org/wiki/Kazinag_National_Park" target="_blank">Kazinag National Park</a>
     </div>
+  </div>
 </body>
 </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biosphere Reserve - Karnataka</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+      color: #004d40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #ffffffcc;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 700px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 30px;
+      color: #006064;
+    }
+
+    .park-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .park-list a {
+      background-color: #ffffff;
+      color: #006064;
+      text-decoration: none;
+      padding: 16px 24px;
+      font-size: 1.2rem;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      border-left: 5px solid #00acc1;
+    }
+
+    .park-list a:hover {
+      background-color: #00acc1;
+      color: #ffffff;
+      transform: translateY(-3px);
+      border-left: 5px solid #004d40;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .park-list a {
+        font-size: 1rem;
+        padding: 12px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Biosphere Reserve in Karnataka</h1>
+    <div class="park-list">
+        <a href="https://en.wikipedia.org/wiki/Nilgiri_Biosphere_Reserve" target="_blank">Nilgiri Biosphere Reserve</a>
+        <a href="https://en.wikipedia.org/wiki/Sharavathi_Valley_Biosphere_Reserve" target="_blank">Sharavathi Valley Biosphere Reserve</a>
+  </div>
+</body>
+</html>

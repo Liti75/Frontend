@@ -1,89 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Wildlife Sanctuaries</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Background */
-        body {
-            margin: 0;
-            background-image: url('https://imgs.search.brave.com/U9ISBhd2f0bzi1ZiZcCrBmTHEeiDSkgD89vkNTee9JI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9iaWctaGVyZC13/aWxkZWJlZXN0LWlz/LWFib3V0LW1hcmEt/cml2ZXJfMjY1MTQy/LTY0MDEuanBnP3Np/emU9NjI2JmV4dD1q/cGc');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            position: relative;
-        }
+  <meta charset="UTF-8" />
+  <title>Wildlife Sanctuaries - Odisha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+    }
 
-        /* Dark overlay for text readability */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: -1;
-        }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
 
-        /* Container */
-        .container {
-            padding: 50px 20px;
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-            color: white;
-        }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
 
-        /* Header */
-        .container h1 {
-            font-size: 2.5rem;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
+    .sanctuary-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
-        /* Link cards */
-        .link-card {
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid white;
-            padding: 15px 25px;
-            margin: 15px 0;
-            border-radius: 10px;
-            transition: background 0.3s, transform 0.3s;
-            display: inline-block;
-            text-decoration: none;
-            font-size: 1.4rem;
-            color: white;
-        }
+    .sanctuary-list a {
+      background-color: #ffffff;
+      color: #2c3e50;
+      text-decoration: none;
+      padding: 18px 25px;
+      font-size: 1.3rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+    }
 
-        .link-card:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-3px);
-            color: #fff;
-        }
+    .sanctuary-list a:hover {
+      background-color: #2c3e50;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
 
-        @media (max-width: 600px) {
-            .container h1 {
-                font-size: 2rem;
-            }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
 
-            .link-card {
-                font-size: 1.2rem;
-                padding: 12px 20px;
-            }
-        }
-    </style>
+      .sanctuary-list a {
+        font-size: 1rem;
+        padding: 14px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Wildlife Sanctuaries in Odisha</h1>
-        <a class="link-card" href="https://en.wikipedia.org/wiki/Baisipalli_Wildlife_Sanctuary" target="_blank">Baisipalli Wildlife Sanctuary</a>
-        <a class="link-card" href="https://en.wikipedia.org/wiki/Bhitarkanika_Mangroves" target="_blank">Bhitarkanika Mangroves</a>
-        <a class="link-card" href="https://en.wikipedia.org/wiki/Kapilasa_Wildlife_Sanctuary" target="_blank">Kapilasa Wildlife Sanctuary</a>
-        <a class="link-card" href="https://en.wikipedia.org/wiki/Debrigarh_Wildlife_Sanctuary" target="_blank">Debrigarh Wildlife Sanctuary</a>
-        <a class="link-card" href="https://en.wikipedia.org/wiki/Hadgarh_Wildlife_Sanctuary" target="_blank">Hadgarh Wildlife Sanctuary</a>
+  <div class="container">
+    <h1>Wildlife Sanctuaries in Odisha</h1>
+    <div class="sanctuary-list">
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Baisipalli_Wildlife_Sanctuary" target="_blank">Baisipalli Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Bhitarkanika_Mangroves" target="_blank">Bhitarkanika Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Balukhand-Konark_Wildlife_Sanctuary" target="_blank">Balukhand–Konark Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Badrama_Wildlife_Sanctuary" target="_blank">Badrama (Ushakothi) Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Chandaka_Dampara_Wildlife_Sanctuary" target="_blank">Chandaka-Dampara Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Debrigarh_Wildlife_Sanctuary" target="_blank">Debrigarh Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Gahirmatha_Marine_Wildlife_Sanctuary" target="_blank">Gahirmatha Marine Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Hadgarh_Wildlife_Sanctuary" target="_blank">Hadgarh Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Kapilasa_Wildlife_Sanctuary" target="_blank">Kapilasa Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Karlapat_Wildlife_Sanctuary" target="_blank">Karlapat Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Khalasuni_Wildlife_Sanctuary" target="_blank">Khalasuni Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Kotgarh_Wildlife_Sanctuary" target="_blank">Kotgarh Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Kuldiha_Wildlife_Sanctuary" target="_blank">Kuldiha Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Lakhari_Valley_Wildlife_Sanctuary" target="_blank">Lakhari Valley Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Nalbana_Bird_Sanctuary" target="_blank">Nalbana Bird Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Nandankanan_Zoological_Park" target="_blank">Nandankanan Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Satkosia_Gorge_Wildlife_Sanctuary" target="_blank">Satkosia Gorge Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Simlipal_National_Park" target="_blank">Simlipal Wildlife Sanctuary</a>
+      <a class="link-card" href="https://en.wikipedia.org/wiki/Sunabeda_Wildlife_Sanctuary" target="_blank">Sunabeda Wildlife Sanctuary</a>
     </div>
+  </div>
 </body>
 </html>

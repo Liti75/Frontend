@@ -1,60 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Odisha National Parks</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: url('https://imgs.search.brave.com/in5_p9_-q1rOLtGySavfbthWPbiN5jGcnu3V4MjMy4U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2hlYXBpc20uY29t/L2ltYWdlcy9EZW5h/bGlfTmF0aW9uYWxf/UGFya18xZ2NUa3ZO/Lm1heC04MjV4NTUw/LmpwZw') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-            text-align: center;
-            padding-top: 20vh;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Odisha National Parks</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+    }
 
-        h1 {
-            font-size: 3rem;
-            margin: 30px 0;
-            font-style: italic;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: inline-block;
-            padding: 15px 30px;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
 
-        h1:hover {
-            transform: scale(1.05);
-        }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
 
-        a {
-            text-decoration: none;
-            color: #f8f8f8;
-            transition: color 0.3s ease;
-        }
+    .park-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
-        a:hover {
-            color: #ffe600;
-        }
+    .park-list a {
+      background-color: #ffffff;
+      color: #2c3e50;
+      text-decoration: none;
+      padding: 18px 25px;
+      font-size: 1.3rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: all 0.3s ease;
+    }
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-                padding: 10px 20px;
-            }
+    .park-list a:hover {
+      background-color: #2c3e50;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
 
-            body {
-                padding-top: 10vh;
-            }
-        }
-    </style>
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .park-list a {
+        font-size: 1rem;
+        padding: 14px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="https://en.wikipedia.org/wiki/Bhitarkanika_National_Park" target="_blank">Bhitarkanika National Park</a></h1>
-    <h1><a href="https://en.wikipedia.org/wiki/Simlipal_National_Park" target="_blank">Simlipal National Park</a></h1>
+  <div class="container">
+    <h1>Odisha National Parks</h1>
+    <div class="park-list">
+      <a href="https://en.wikipedia.org/wiki/Bhitarkanika_National_Park" target="_blank">Bhitarkanika National Park</a>
+      <a href="https://en.wikipedia.org/wiki/Simlipal_National_Park" target="_blank">Simlipal National Park</a>
+    </div>
+  </div>
 </body>
 </html>
