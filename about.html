@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       background-color: rgb(234, 245, 234);
@@ -39,27 +40,6 @@
 
     nav a:hover {
       color: brown;
-    }
-
-    .lang-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-
-    .lang-toggle button {
-      padding: 8px 14px;
-      font-size: 0.9rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      background-color: white;
-      color: black;
-      transition: background-color 0.3s;
-    }
-
-    .lang-toggle button:hover {
-      background-color: #ddd;
     }
 
     .about-section {
@@ -104,11 +84,6 @@
         text-align: center;
       }
 
-      .lang-toggle {
-        top: 10px;
-        right: 10px;
-      }
-
       .about-section h2 {
         font-size: 2rem;
       }
@@ -121,13 +96,10 @@
 </head>
 <body>
   <header>
-    <h1>WILDLIFE</h1>
-    <div class="lang-toggle">
-      <button onclick="toggleLanguage()">हिन्दी / English</button>
-    </div>
+    <h1 id="title">WILDLIFE</h1>
     <nav>
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT US</a>
+      <a href="index.html" id="home">HOME</a>
+      <a href="about.html" id="about">ABOUT US</a>
     </nav>
   </header>
 
@@ -152,22 +124,7 @@
     </div>
   </section>
 
-  <script>
-    let isHindi = false;
-    function toggleLanguage() {
-      isHindi = !isHindi;
-      document.getElementById("about-heading").textContent = isHindi ? "हमारे बारे में" : "About Us";
-      document.getElementById("para1").textContent = isHindi
-        ? "वाइल्डलाइफ में, हम हमारे ग्रह के प्राकृतिक आवासों और जैव विविधता को संरक्षित करने के लिए प्रतिबद्ध हैं। हमारा मंच राष्ट्रीय उद्यानों, वन्यजीव अभयारण्यों, पक्षी अभयारण्यों और बायोस्फीयर रिजर्व जैसे संरक्षित क्षेत्रों की सुंदरता और महत्व को प्रदर्शित करके लोगों को शिक्षित और प्रेरित करता है।"
-        : "At Wildlife, we are passionate about preserving the natural habitats and biodiversity of our planet. Our platform aims to educate and inspire individuals by showcasing the beauty and importance of protected areas such as national parks, wildlife sanctuaries, bird sanctuaries, and biosphere reserves.";
-      document.getElementById("para2").textContent = isHindi
-        ? "हम मानते हैं कि जागरूकता फैलाकर, हम अधिक लोगों को वन्यजीवों का सम्मान और संरक्षण करने के लिए प्रेरित कर सकते हैं। हमारी क्यूरेट की गई गैलरी और सूचनात्मक अनुभाग प्रकृति के संतुलन को बनाए रखने के लिए महत्वपूर्ण विविध और समृद्ध पारिस्थितिकी तंत्र का एक द्वार प्रदान करते हैं।"
-        : "We believe that by spreading awareness, we can encourage more people to respect and protect wildlife. Our curated galleries and informative sections provide a gateway to the diverse and rich ecosystems that are crucial for maintaining the balance of nature.";
-      document.getElementById("mission-heading").textContent = isHindi ? "हमारा मिशन" : "Our Mission";
-      document.getElementById("mission-text").textContent = isHindi
-        ? "शिक्षा, जुड़ाव और वकालत के माध्यम से वन्यजीव संरक्षण को बढ़ावा देना। हम प्राकृतिक दुनिया के चमत्कारों को उजागर करने के साथ-साथ पर्यावरण के साथ स्थायी बातचीत को प्रोत्साहित करने का प्रयास करते हैं।"
-        : "To promote wildlife conservation through education, engagement, and advocacy. We strive to highlight the wonders of the natural world while encouraging sustainable interactions with our environment.";
-    }
-  </script>
+  <script src="lang.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

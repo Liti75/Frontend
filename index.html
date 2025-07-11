@@ -4,179 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wildlife</title>
-  <style>
-    body {
-      background-color: rgb(180, 223, 180);
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: black;
-      color: white;
-      padding: 20px 0;
-      border-bottom: 5px solid black;
-    }
-
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 30px;
-    }
-
-    header h1 {
-      font-size: 3.5rem;
-      margin: 0;
-    }
-
-    .language-switch {
-      display: flex;
-      gap: 10px;
-    }
-
-    .language-switch button {
-      padding: 6px 10px;
-      font-size: 1rem;
-      cursor: pointer;
-      border: 1px solid white;
-      background-color: transparent;
-      color: white;
-      border-radius: 4px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .language-switch button:hover {
-      background-color: white;
-      color: black;
-    }
-
-    nav {
-      margin-top: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: rgb(138, 20, 138);
-      font-size: 1.5rem;
-      margin: 0 15px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    nav a:hover,
-    nav a:active {
-      color: brown;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      padding: 40px 20px;
-    }
-
-    figure {
-      text-align: center;
-      max-width: 300px;
-    }
-
-    figure img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      border: 4px solid black;
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: block;
-    }
-
-    figure img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    }
-
-    figure figcaption {
-      margin-top: 10px;
-      font-size: 1.3rem;
-    }
-
-    figure a {
-      color: rgb(138, 20, 138);
-      text-decoration: none;
-    }
-
-    figure a:hover {
-      color: brown;
-    }
-
-    /* Fun Fact Section */
-    .fun-fact {
-      background: #fff3cd;
-      padding: 20px;
-      margin: 30px auto;
-      max-width: 800px;
-      border-left: 6px solid #ffc107;
-      font-size: 1.2rem;
-    }
-
-    /* Footer / Contact */
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.5rem;
-      }
-
-      .header-top {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-
-      .gallery {
-        gap: 20px;
-      }
-
-      .language-switch {
-        margin-top: 10px;
-        align-self: flex-end;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="header-top">
-      <h1 data-en="WILDLIFE" data-hi="वन्य जीवन">WILDLIFE</h1>
+      <h1 id="title">WILDLIFE</h1>
       <div class="language-switch">
-        <button onclick="switchLanguage('en')">EN</button>
-        <button onclick="switchLanguage('hi')">हि</button>
+        <select id="languageSelect" onchange="handleLanguageChange()">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="es">Español</option>
+          <option value="or">ଓଡ଼ିଆ</option>
+        </select>
       </div>
     </div>
     <nav>
-      <a href="#" data-en="HOME" data-hi="मुख्य पृष्ठ">HOME</a>
-      <a href="about.html" data-en="ABOUT US" data-hi="हमारे बारे में">ABOUT US</a>
-      <a href="#fun" data-en="FUN FACTS" data-hi="रोचक तथ्य">FUN FACTS</a>
-      <a href="#contact" data-en="CONTACT" data-hi="संपर्क करें">CONTACT</a>
+      <a href="#" id="home">HOME</a>
+      <a href="about.html" id="about">ABOUT US</a>
+      <a href="#fun" id="fun">FUN FACTS</a>
+      <a href="#contact" id="contact">CONTACT</a>
+      <a href="post.html" id="post">POST</a>
     </nav>
   </header>
 
@@ -185,73 +34,40 @@
       <a href="nationalpark.html">
         <img src="https://d368ufu7xgcs86.cloudfront.net/article-4-10.jpg" alt="National Park">
       </a>
-      <figcaption><a href="nationalpark.html" data-en="National Park" data-hi="राष्ट्रीय उद्यान">National Park</a></figcaption>
+      <figcaption><a href="nationalpark.html" id="np">National Park</a></figcaption>
     </figure>
 
     <figure>
       <a href="wildlifesanctuary.html">
         <img src="https://img.freepik.com/free-photo/american-jaguar-nature-habitat-south-american-jungle_475641-1065.jpg" alt="Wildlife Sanctuary">
       </a>
-      <figcaption><a href="wildlifesanctuary.html" data-en="Wildlife Sanctuary" data-hi="वन्यजीव अभयारण्य">Wildlife Sanctuary</a></figcaption>
+      <figcaption><a href="wildlifesanctuary.html" id="ws">Wildlife Sanctuary</a></figcaption>
     </figure>
 
     <figure>
       <a href="birdsanctuary.html">
         <img src="https://d368ufu7xgcs86.cloudfront.net/20397-1572948358.jpg" alt="Bird Sanctuary">
       </a>
-      <figcaption><a href="birdsanctuary.html" data-en="Bird Sanctuary" data-hi="पक्षी अभयारण्य">Bird Sanctuary</a></figcaption>
+      <figcaption><a href="birdsanctuary.html" id="bs">Bird Sanctuary</a></figcaption>
     </figure>
 
     <figure>
       <a href="biosphere.html">
         <img src="https://img.freepik.com/premium-photo/big-herd-wildebeest-is-about-mara-river_265142-6401.jpg" alt="Biosphere Reserve">
       </a>
-      <figcaption><a href="biosphere.html" data-en="Biosphere Reserve" data-hi="जैवमंडल आरक्षित क्षेत्र">Biosphere Reserve</a></figcaption>
+      <figcaption><a href="biosphere.html" id="br">Biosphere Reserve</a></figcaption>
     </figure>
   </main>
 
-  <!-- Fun Fact Section -->
   <section id="fun" class="fun-fact">
-    <h2>Did You Know?</h2>
+    <h2 id="fact_heading">Did You Know?</h2>
     <p id="fact">Loading a wild fact...</p>
   </section>
-  
-  <script>
-  async function fetchWikiFact() {
-    try {
-      const res = await fetch('https://en.wikipedia.org/api/rest_v1/page/random/summary');
-      const data = await res.json();
-      const fact = data.extract ? data.extract.split('. ')[0] + '.' : 'Couldn’t find a fun fact this time!';
-      document.getElementById('fact').textContent = fact;
-    } catch (e) {
-      console.error('Fetch failed:', e);
-      document.getElementById('fact').textContent = 'Sorry, no fact available right now.';
-    }
-  }
 
-  // Load a fact on page load
-  fetchWikiFact();
-
-  // Refresh the fact every 10 minutes (600,000 ms)
-  setInterval(fetchWikiFact, 600000);
-</script>
-
-
-  <!-- Contact / Feedback Footer -->
   <footer id="contact">
-    <p>Have feedback or questions? <a href="https://forms.gle/brtxcevRKiguZm5f7">Feedback</a></p>
-    <p>© 2025 Wildlife India | All Rights Reserved</p>
+    <p id="email_us">Have feedback or questions? <a href="mailto:wildlifeinfo@example.com">Email Us</a></p>
   </footer>
 
-  <script>
-    function switchLanguage(lang) {
-      const elements = document.querySelectorAll('[data-en]');
-      elements.forEach(el => {
-        el.textContent = el.dataset[lang];
-      });
-    }
-  </script>
-
-
+  <script src="script.js"></script>
 </body>
 </html>
