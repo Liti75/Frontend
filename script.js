@@ -31,7 +31,7 @@ async function switchLanguage(lang) {
     const t = data[lang];
 
     const keys = [
-      "title", "home", "about", "fun", "contact", "post",
+      "title", "home", "about", "fun_link", "contact_link", "post",
       "table_number", "table_state",
       "np_heading", "ws_heading", "bs_heading", "br_heading", "wr_heading",
       "fact_heading", "email_us", "np", "ws", "bs", "br","state_ap", "state_ap_count",
@@ -72,3 +72,15 @@ async function fetchWikiFact() {
     if (factEl) factEl.textContent = "Sorry, no fact available right now.";
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const rows = document.querySelectorAll(".clickable-row");
+  rows.forEach(row => {
+    row.addEventListener("click", function () {
+      const href = row.getAttribute("data-href");
+      if (href) {
+        window.location.href = href;
+      }
+    });
+  });
+});

@@ -170,122 +170,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.community-section {
-  background-color: #fdfdfd;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.community-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #2c3e50;
-}
-
-#postForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 40px;
-}
-
-#postForm input,
-#postForm textarea,
-#postForm button {
-  width: 90%;
-  max-width: 500px;
-  padding: 12px 15px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-#postForm textarea {
-  resize: vertical;
-  height: 100px;
-}
-
-#postForm button {
-  background-color: #2980b9;
-  color: white;
-  border: none;
-  font-weight: bold;
+.clickable-row {
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-#postForm button:hover {
-  background-color: #1f6391;
+.clickable-row:hover {
+  background-color: #e6f7ff;
 }
 
-.post-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 0 20px;
-}
-
-.post {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  text-align: left;
-  transition: transform 0.2s;
-}
-
-.post:hover {
-  transform: translateY(-5px);
-}
-
-.post img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.post h3 {
-  font-size: 1.2rem;
-  margin: 0 0 10px;
-  color: #34495e;
-}
-
-.post p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #444;
-}
-
-.like-comment {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.like-comment button {
-  background: none;
-  border: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-  color: #e74c3c;
-  font-weight: bold;
-  transition: transform 0.2s;
-}
-
-.like-comment button:hover {
-  transform: scale(1.1);
-}
-
-.comments {
-  margin-top: 15px;
-}
-
-.comments input {
-  width: 100%;
-  padding: 8px 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  margin-bottom: 5px;
-}
