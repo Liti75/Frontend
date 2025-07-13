@@ -100,6 +100,34 @@ async function switchLanguage(lang) {
       file = "jharkhand.json";
     }else if (window.location.pathname.includes("ladakh")) {
       file = "ladakh.json";
+    }else if (window.location.pathname.includes("maharastra")) {
+      file = "maharastra.json";
+    }else if (window.location.pathname.includes("odisha")) {
+      file = "odisha.json";
+    }else if (window.location.pathname.includes("telengana")) {
+      file = "telengana.json";
+    }else if (window.location.pathname.includes("westbengal")) {
+      file = "westbengal.json";
+    }else if (window.location.pathname.includes("wsa&n")) {
+      file = "wsa&n.json";
+    }else if (window.location.pathname.includes("wsap")) {
+      file = "wsap.json";
+    }else if (window.location.pathname.includes("wsg")) {
+      file = "wsg.json";
+    }else if (window.location.pathname.includes("wsj")) {
+      file = "wsj.json";
+    }else if (window.location.pathname.includes("wsj&k")) {
+      file = "wsj&k.json";
+    }else if (window.location.pathname.includes("wsl")) {
+      file = "wsl.json";
+    }else if (window.location.pathname.includes("wsm")) {
+      file = "wsm.json";
+    }else if (window.location.pathname.includes("wso")) {
+      file = "wso.json";
+    }else if (window.location.pathname.includes("wst")) {
+      file = "wst";
+    }else if (window.location.pathname.includes("wswb")) {
+      file = "wswb.json";
     }
     
 const res = await fetch(file);
@@ -136,7 +164,21 @@ const res = await fetch(file);
       "bsup_heading","bakhira","nawabganj","samaspur","sandi","sur","vijay","okhla","patna",
       "bswb_heading","bswb1","bswb2","bswb3","brtn","br1","br2","br3","br_uk","nanda",
       "brwb_heading","sundarban","darjeeling","goa_np_heading","goa_np_1","jk_np_heading","dachigam",
-      "kishtwar","kazinag","jh_np_heading","betla","ladakh_heading","hemis_link"
+      "kishtwar","kazinag","jh_np_heading","betla","ladakh_heading","hemis_link","mh_heading","mh_np1",
+      "mh_np2","mh_np3","mh_np4","mh_np5","mh_np6","od_np_title","od_np_heading","od_np_1","od_np_2",
+      "ts_heading","ts_np1","ts_np2","ts_np3","wb_np_title","wb_np_heading","wb_np_1","wb_np_2",
+      "wb_np_3","wb_np_4","wb_np_5","wb_np_6","wsa_title","wsa_heading","wsa_1",
+      "wsa_2","wsa_3","wsa_4","wsa_5","wsa_6","wsa_7","wsa_8","wsa_9","wsap_title","wsap_1","wsap_2","wsap_3",
+      "wsap_4","wsap_5","wsap_6","wsap_7","wsap_8","wsap_9","wsap_10","wsap_11","wsap_12","wsap_13",
+      "goa_ws_heading","goa_ws_1","goa_ws_2","goa_ws_3","goa_ws_4",
+      "goa_ws_5","goa_ws_6","jh_ws_heading","jh_ws_1","jh_ws_2","jh_ws_3","jh_ws_4","jh_ws_5","jh_ws_6","jh_ws_7",
+      "jh_ws_8","jh_ws_9","jh_ws_10","jh_ws_11","wildlife_jk_heading","wildlife_jk_1","wildlife_jk_2","wildlife_jk_3",
+      "wildlife_jk_4","wildlife_jk_5","wildlife_jk_6","wildlife_jk_7","wildlife_jk_8","wildlife_jk_9","wildlife_jk_10",
+      "wildlife_jk_11","wildlife_jk_12","wildlife_jk_13","wildlife_jk_14","ladakh_ws_heading","changthang",
+      "karakoram","mh_ws_heading","mh_ws_1","mh_ws_2","mh_ws_3","mh_ws_4","mh_ws_5",
+      "mh_ws_6","mh_ws_7","mh_ws_8","ws_od_heading","ws_od_1","ws_od_2","ws_od_3","ws_od_4","ws_od_5","ws_od_6",
+      "ws_od_7","ws_od_8","ws_od_9","ws_od_10","ws_od_11","ws_od_12","ws_od_13","ws_od_14","ws_od_15","ws_od_16",
+      "ws_od_17","ws_od_18","ws_od_19","wsts_heading","ts_1","ts_2","ts_3","ts_4","ts_5","ts_6","ts_7","ts_8","ts_9",
     ];
 
     keys.forEach((key) => {
